@@ -151,62 +151,50 @@ footer{
 	padding: 0.01%;
 }
 
-/* Responsive general: textos y listas */
+/*Responsive*/
 @media (max-width: 768px) {
-    /* Main: columnas apiladas en móvil */
-    main .divisionVertical {
+    .divisionVertical {
         flex-direction: column;
     }
-
-    main .izquierda,
-    main .derecha {
+    .izquierda, .derecha {
         width: 100%;
     }
-
-    /* Listas del main apiladas */
-    .lista, .lista2 {
-        flex-direction: column;
+    
+    .img {
+        width: 30%;  
+        max-width: 15;
+        height: auto;
+        margin: 0 auto;
+        display: block;
     }
 
+    .lista, .lista2 {
+        flex-direction: column; 
+    }
     .bloque1, .bloque2, .bloque3, .bloque4, .bloque5 {
         width: 100%;
         margin-bottom: 10px;
     }
 
-    /* Header: columnas siguen en fila */
+    header {
+        position: relative; /* ya no se queda pegado */
+    }
+
     header .divisionVertical {
-        flex-direction: row;       /* fila siempre */
-        justify-content: space-between;
+        flex-direction: column;
         align-items: center;
-        flex-wrap: wrap;           /* se ajusta si la pantalla es muy estrecha */
+        text-align: center;
     }
 
-    header .izquierda,
-    header .derecha {
-        width: auto;               /* se ajusta al contenido */
-        margin: 5px;
+    header .izquierda, header .derecha {
+        width: 100%;
     }
 
-    /* Imagen del header */
-    header .img {
-        width: 80px;               /* tamaño ajustable en móvil */
-        max-width: 150px;          /* límite en escritorio */
-        height: auto;
-        display: block;
-    }
-
-    /* Textos más pequeños en móvil */
-    h1 { font-size: 1.2rem; }
-    h2 { font-size: 1rem; }
-    h3 { font-size: 1rem; }
-    h4 { font-size: 0.9rem; }
-    p  { font-size: 0.9rem; }
-
-    /* Separación del contenido debajo del header */
     main {
         margin-top: 20px;
     }
 }
+
 
 
 

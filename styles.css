@@ -164,10 +164,12 @@ footer{
         width: auto;
         margin: 5px; 
 
-    header .img {
-        width: 40%; 
-        height: auto;
+        header .img {
+            width: 40%; 
+            height: auto;
+        }
     }
 }
+
 
 

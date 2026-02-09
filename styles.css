@@ -80,7 +80,7 @@ hr {
     height: 5%;
 }
 
-.contacto, .referencias, .experiencia, .sobreMi, .educación, .habilidades, .idiomas, .proyectos {
+.contacto, .referencias, .experiencia, .sobreMi, .educación, .habilidades, .idiomas, .proyectos, .sitioWeb {
     margin-left: 4%;
     margin-right: 4%;
 }
@@ -175,4 +175,5 @@ footer{
         margin-bottom: 10px;
     }
 }
+
 

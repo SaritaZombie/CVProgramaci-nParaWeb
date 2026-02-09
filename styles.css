@@ -160,11 +160,11 @@ footer{
     }
 
     /* Main: columnas apiladas en móvil */
-	divisionVertical {
+	.divisionVertical {
         flex-direction: column;
     }
-    izquierda,
-    derecha {
+    .izquierda,
+    .derecha {
         width: 100%;
     }
 
@@ -186,17 +186,8 @@ footer{
         margin-bottom: 10px;
     }
 
-    /* Textos más pequeños en móvil */
-    h1 { font-size: 1.2rem; }
-    h2 { font-size: 1rem; }
-    h3 { font-size: 1rem; }
-    h4 { font-size: 0.9rem; }
-    p  { font-size: 0.9rem; }
 
-    /* Separación del contenido debajo del header */
-    main {
-        margin-top: 20px;
-    }
 }
+
 
 

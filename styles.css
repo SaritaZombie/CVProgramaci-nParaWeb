@@ -80,7 +80,7 @@ hr {
     height: 5%;
 }
 
-.contacto, .referencias, .experiencia, .sobreMi, .educación, .habilidades, .idiomas, .proyectos, .sitioWeb {
+.contacto, .referencias, .experiencia, .sobreMi, .educación, .habilidades, .idiomas, .proyectos {
     margin-left: 4%;
     margin-right: 4%;
 }
@@ -174,32 +174,5 @@ footer{
         width: 100%;
         margin-bottom: 10px;
     }
-
-    h1 { font-size: 1.5rem; }
-    h2 { font-size: 1.2rem; }
-    h3 { font-size: 1rem; }
-    h4 { font-size: 0.9rem; }
-    p  { font-size: 0.9rem; }
 }
 
-/* Evitar que el header tape el contenido en móviles */
-@media (max-width: 768px) {
-    header {
-        position: relative; /* ya no se queda pegado */
-    }
-
-    /* Centrar la foto y la info del header */
-    header .divisionVertical {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    header .izquierda, header .derecha {
-        width: 100%;
-    }
-
-    main {
-        margin-top: 20px; /* espacio entre header y contenido */
-    }
-}

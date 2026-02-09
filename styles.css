@@ -161,8 +161,7 @@ footer{
     }
     
     .img {
-        width: 30%;  
-        max-width: 150px;
+        width: 30%; 
         height: auto;
         margin: 0 auto;
         display: block;
@@ -177,7 +176,7 @@ footer{
     }
 
     header {
-        position: relative; /* ya no se queda pegado */
+        position: relative; 
     }
 
     header .divisionVertical {
@@ -194,3 +193,4 @@ footer{
         margin-top: 20px;
     }
 }
+

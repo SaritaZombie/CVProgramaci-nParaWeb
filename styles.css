@@ -181,3 +181,25 @@ footer{
     h4 { font-size: 0.9rem; }
     p  { font-size: 0.9rem; }
 }
+
+/* Evitar que el header tape el contenido en móviles */
+@media (max-width: 768px) {
+    header {
+        position: relative; /* ya no se queda pegado */
+    }
+
+    /* Centrar la foto y la info del header */
+    header .divisionVertical {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header .izquierda, header .derecha {
+        width: 100%;
+    }
+
+    main {
+        margin-top: 20px; /* espacio entre header y contenido */
+    }
+}

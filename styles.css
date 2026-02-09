@@ -153,36 +153,20 @@ footer{
 
 /*Responsive*/
 @media (max-width: 768px) {
-    /* Apilar todo en columna */
     .divisionVertical {
         flex-direction: column;
     }
 
-    /* Columnas ocupan todo el ancho */
     .izquierda, .derecha {
         width: 100%;
-        margin: 0; /* elimina margen que rompe diseño */
     }
 
-    /* Fondo y textos centrados */
-    .izquierda {
-        text-align: center;
-    }
-
-    .derecha {
-        text-align: left;
-        padding: 10px; /* espacio interno */
-    }
-
-    /* Imagen del header centrada */
     .img {
-        width: 80px; /* ajusta según necesites */
+        width: 35%; 
         height: auto;
-        margin: 0 auto 10px auto;
         display: block;
     }
 
-    /* Listas y bloques del main ocupando todo el ancho */
     .lista, .lista2 {
         flex-direction: column; 
         width: 100%;
@@ -192,14 +176,4 @@ footer{
         width: 100%;
         margin-bottom: 10px;
     }
-
-    /* Ajuste de textos más pequeños */
-    h1 { font-size: 1.5rem; }
-    h2 { font-size: 1.2rem; }
-    h3 { font-size: 1rem; }
-    h4 { font-size: 0.9rem; }
-    p  { font-size: 0.9rem; }
 }
-
-
-

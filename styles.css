@@ -152,62 +152,26 @@ footer{
 }
 
 @media (max-width: 768px) {
-    /* Apilar todas las divisiones verticales */
-    .divisionVertical {
-        flex-direction: column;
-    }
-
-    /* Columnas principales del main ocupan todo el ancho */
-    .izquierda, .derecha {
-        width: 100%;
-    }
-
-    /* Header en móvil: todo junto y centrado */
+    /* Header permanece en fila (no se apila) */
     header .divisionVertical {
-        flex-direction: column; /* apilar foto y info */
-        align-items: center;    /* centrar horizontalmente */
-        text-align: center;     /* centrar texto */
+        flex-direction: row; /* fuerza que siga en fila */
+        justify-content: center; /* centra contenido horizontalmente */
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap; /* permite que se ajuste si el ancho es muy pequeño */
     }
 
-    header .izquierda,
-    header .derecha {
-        width: auto;            /* se ajusta al contenido */
-        margin: 5px 0;          /* espacio vertical */
+    header .izquierda, header .derecha {
+        width: auto; /* se ajustan al contenido */
+        margin: 5px; /* espacio entre bloques */
     }
 
-    /* Imagen del header más grande y centrada */
     header .img {
-        width: 50%;
-        max-width: 150px;
+        width: 80px; /* más pequeña en móvil */
         height: auto;
-        margin: 0 auto;
-        display: block;
     }
 
-    /* Listas del main pasan a columna para no comprimir */
-    .lista, .lista2 {
-        flex-direction: column;
-    }
-
-    .bloque1, .bloque2, .bloque3, .bloque4, .bloque5 {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    /* Ajuste de textos para móviles */
-    h1 { font-size: 1.5rem; }
-    h2 { font-size: 1.2rem; }
-    h3 { font-size: 1rem; }
-    h4 { font-size: 0.9rem; }
-    p  { font-size: 0.9rem; }
-
-    /* Evitar que el header tape el contenido */
-    header {
-        position: relative;
-    }
-
-    /* Separación del contenido debajo del header */
-    main {
-        margin-top: 20px;
-    }
+    h1 { font-size: 1.2rem; }
+    h2 { font-size: 1rem; }
 }
+

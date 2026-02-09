@@ -152,26 +152,22 @@ footer{
 }
 
 @media (max-width: 768px) {
-    /* Header permanece en fila (no se apila) */
     header .divisionVertical {
-        flex-direction: row; /* fuerza que siga en fila */
-        justify-content: center; /* centra contenido horizontalmente */
+        flex-direction: row; 
+        justify-content: center;
         align-items: center;
         text-align: center;
-        flex-wrap: wrap; /* permite que se ajuste si el ancho es muy pequeño */
+        flex-wrap: wrap; 
     }
 
     header .izquierda, header .derecha {
-        width: auto; /* se ajustan al contenido */
-        margin: 5px; /* espacio entre bloques */
-    }
+        width: auto;
+        margin: 5px; 
 
     header .img {
-        width: 80px; /* más pequeña en móvil */
+        width: 40%; 
         height: auto;
     }
-
-    h1 { font-size: 1.2rem; }
-    h2 { font-size: 1rem; }
 }
+
 

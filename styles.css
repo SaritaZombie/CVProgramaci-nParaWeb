@@ -153,32 +153,31 @@ footer{
 
 /*Responsive*/
 @media (max-width: 768px) {
-    /* Header: ahora es estático en móvil */
-    header {
+
+	header {
         position: relative; /* ya no queda pegajoso */
         top: auto;
     }
-
-    /* Main: columnas apiladas en móvil */
-	.divisionVertical {
+    /* Todo se apila en columna */
+    .divisionVertical {
         flex-direction: column;
     }
-    .izquierda,
-    .derecha {
+
+    .izquierda, .derecha {
         width: 100%;
     }
 
-    /* Imagen del header centrada */
-    header .img {
+    /* Imagen centrada */
+    .img {
         width: 50%;
         height: auto;
         margin: 0 auto;
         display: block;
     }
 
-    /* Listas del main se apilan */
+    /* Listas y bloques del main se apilan */
     .lista, .lista2 {
-        flex-direction: column; 
+        flex-direction: column;
     }
 
     .bloque1, .bloque2, .bloque3, .bloque4, .bloque5 {
@@ -186,8 +185,26 @@ footer{
         margin-bottom: 10px;
     }
 
+    /* Textos más pequeños para móvil */
+    h1 { font-size: 1.2rem; }
+    h2 { font-size: 1rem; }
+    h3 { font-size: 1rem; }
+    h4 { font-size: 0.9rem; }
+    p  { font-size: 0.9rem; }
 
+    /* Separación del contenido */
+    main {
+        margin-top: 20px;
+    }
+
+    /* Header sigue sticky si quieres */
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
 }
+
 
 
 

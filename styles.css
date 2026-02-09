@@ -23,7 +23,11 @@ header {
     .divisionVertical {
         flex-direction: column;
     }
+    .izquierda, .derecha {
+        width: 100%;
+    }
 }
+
 
 .izquierda {
     width: 35%;

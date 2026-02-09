@@ -153,27 +153,50 @@ footer{
 
 /*Responsive*/
 @media (max-width: 768px) {
-    main.divisionVertical {
+    /* Header: ahora es estático en móvil */
+    header {
+        position: relative; /* ya no queda pegajoso */
+        top: auto;
+    }
+
+    /* Main: columnas apiladas en móvil */
+    main .divisionVertical {
         flex-direction: column;
     }
-    .izquierda, .derecha {
+    main .izquierda,
+    main .derecha {
         width: 100%;
     }
-    
-    .img {
+
+    /* Imagen del header centrada */
+    header .img {
         width: 50%;
         height: auto;
         margin: 0 auto;
         display: block;
     }
 
+    /* Listas del main se apilan */
     .lista, .lista2 {
         flex-direction: column; 
     }
-    
+
     .bloque1, .bloque2, .bloque3, .bloque4, .bloque5 {
         width: 100%;
         margin-bottom: 10px;
     }
+
+    /* Textos más pequeños en móvil */
+    h1 { font-size: 1.2rem; }
+    h2 { font-size: 1rem; }
+    h3 { font-size: 1rem; }
+    h4 { font-size: 0.9rem; }
+    p  { font-size: 0.9rem; }
+
+    /* Separación del contenido debajo del header */
+    main {
+        margin-top: 20px;
+    }
 }
+
 

@@ -153,22 +153,17 @@ footer{
 
 /* Responsive general: textos y listas */
 @media (max-width: 768px) {
-    h1 { font-size: 1.2rem; }
-    h2 { font-size: 1rem; }
-    h3 { font-size: 1rem; }
-    h4 { font-size: 0.9rem; }
-    p  { font-size: 0.9rem; }
-
-    /* Main se apila en columna en móvil */
-    .divisionVertical:not(header .divisionVertical) {
+    /* Main: columnas apiladas en móvil */
+    main .divisionVertical {
         flex-direction: column;
     }
 
-    .izquierda, .derecha {
+    main .izquierda,
+    main .derecha {
         width: 100%;
     }
 
-    /* Listas se apilan */
+    /* Listas del main apiladas */
     .lista, .lista2 {
         flex-direction: column;
     }
@@ -177,8 +172,41 @@ footer{
         width: 100%;
         margin-bottom: 10px;
     }
-}
 
+    /* Header: columnas siguen en fila */
+    header .divisionVertical {
+        flex-direction: row;       /* fila siempre */
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;           /* se ajusta si la pantalla es muy estrecha */
+    }
+
+    header .izquierda,
+    header .derecha {
+        width: auto;               /* se ajusta al contenido */
+        margin: 5px;
+    }
+
+    /* Imagen del header */
+    header .img {
+        width: 80px;               /* tamaño ajustable en móvil */
+        max-width: 150px;          /* límite en escritorio */
+        height: auto;
+        display: block;
+    }
+
+    /* Textos más pequeños en móvil */
+    h1 { font-size: 1.2rem; }
+    h2 { font-size: 1rem; }
+    h3 { font-size: 1rem; }
+    h4 { font-size: 0.9rem; }
+    p  { font-size: 0.9rem; }
+
+    /* Separación del contenido debajo del header */
+    main {
+        margin-top: 20px;
+    }
+}
 
 
 

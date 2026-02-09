@@ -161,7 +161,7 @@ footer{
     }
     
     .img {
-        width: 30%; 
+        width: 30%;
         height: auto;
         margin: 0 auto;
         display: block;
@@ -176,21 +176,22 @@ footer{
     }
 
     header {
-        position: relative; 
+        position: relative; /* ya no se queda pegado */
     }
 
     header .divisionVertical {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        flex-direction: column; /* todo en columna */
+        align-items: center;    /* centrar horizontalmente */
+        text-align: center;     /* texto centrado */
     }
 
-    header .izquierda, header .derecha {
-        width: 100%;
+    header .izquierda, 
+    header .derecha {
+        width: auto;   /* que las dos se ajusten al contenido, no ocupen todo el ancho */
+        margin: 5px 0; /* espacio entre bloques */
     }
 
     main {
         margin-top: 20px;
     }
 }
-

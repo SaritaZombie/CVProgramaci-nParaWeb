@@ -151,6 +151,7 @@ footer{
 	padding: 0.01%;
 }
 
+/*Responsive*/
 @media (max-width: 768px) {
     .divisionVertical {
         flex-direction: column;
@@ -160,20 +161,18 @@ footer{
     }
     
     .img {
-        width: 50%;   /* imagen más grande y visible en móvil */
-        max-width: 150px;
+        width: 50%;
         height: auto;
-        margin: 0 auto; /* centrar imagen */
+        margin: 0 auto;
         display: block;
     }
 
     .lista, .lista2 {
-        flex-direction: column;  /* que las listas no se compriman */
+        flex-direction: column; 
     }
+    
     .bloque1, .bloque2, .bloque3, .bloque4, .bloque5 {
         width: 100%;
         margin-bottom: 10px;
     }
 }
-
-

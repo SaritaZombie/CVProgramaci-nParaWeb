@@ -160,11 +160,11 @@ footer{
     }
 
     /* Main: columnas apiladas en móvil */
-    main .divisionVertical {
+	divisionVertical {
         flex-direction: column;
     }
-    main .izquierda,
-    main .derecha {
+    izquierda,
+    derecha {
         width: 100%;
     }
 

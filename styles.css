@@ -151,7 +151,6 @@ footer{
 	padding: 0.01%;
 }
 
-/*Responsive*/
 @media (max-width: 768px) {
     .divisionVertical {
         flex-direction: column;
@@ -161,20 +160,26 @@ footer{
     }
     
     .img {
-        width: 30%;  
-        max-width: 15;
+        width: 50%;   /* imagen más grande y visible en móvil */
+        max-width: 150px;
         height: auto;
-        margin: 0 auto;
+        margin: 0 auto; /* centrar imagen */
         display: block;
     }
 
     .lista, .lista2 {
-        flex-direction: column; 
+        flex-direction: column;  /* que las listas no se compriman */
     }
     .bloque1, .bloque2, .bloque3, .bloque4, .bloque5 {
         width: 100%;
         margin-bottom: 10px;
     }
+
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.2rem; }
+    h3 { font-size: 1rem; }
+    h4 { font-size: 0.9rem; }
+    p  { font-size: 0.9rem; }
 
     header {
         position: relative; /* ya no se queda pegado */
@@ -191,10 +196,6 @@ footer{
     }
 
     main {
-        margin-top: 20px;
+        margin-top: 20px; /* espacio entre header y contenido */
     }
 }
-
-
-
-

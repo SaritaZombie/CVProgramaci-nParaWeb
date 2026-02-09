@@ -151,46 +151,62 @@ footer{
 	padding: 0.01%;
 }
 
-/*Responsive*/
 @media (max-width: 768px) {
+    /* Apilar todas las divisiones verticales */
     .divisionVertical {
         flex-direction: column;
     }
+
+    /* Columnas principales del main ocupan todo el ancho */
     .izquierda, .derecha {
         width: 100%;
     }
-    
-    .img {
-        width: 30%;
+
+    /* Header en móvil: todo junto y centrado */
+    header .divisionVertical {
+        flex-direction: column; /* apilar foto y info */
+        align-items: center;    /* centrar horizontalmente */
+        text-align: center;     /* centrar texto */
+    }
+
+    header .izquierda,
+    header .derecha {
+        width: auto;            /* se ajusta al contenido */
+        margin: 5px 0;          /* espacio vertical */
+    }
+
+    /* Imagen del header más grande y centrada */
+    header .img {
+        width: 50%;
+        max-width: 150px;
         height: auto;
         margin: 0 auto;
         display: block;
     }
 
+    /* Listas del main pasan a columna para no comprimir */
     .lista, .lista2 {
-        flex-direction: column; 
+        flex-direction: column;
     }
+
     .bloque1, .bloque2, .bloque3, .bloque4, .bloque5 {
         width: 100%;
         margin-bottom: 10px;
     }
 
+    /* Ajuste de textos para móviles */
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.2rem; }
+    h3 { font-size: 1rem; }
+    h4 { font-size: 0.9rem; }
+    p  { font-size: 0.9rem; }
+
+    /* Evitar que el header tape el contenido */
     header {
-        position: relative; /* ya no se queda pegado */
+        position: relative;
     }
 
-    header .divisionVertical {
-        flex-direction: column; /* todo en columna */
-        align-items: center;    /* centrar horizontalmente */
-        text-align: center;     /* texto centrado */
-    }
-
-    header .izquierda, 
-    header .derecha {
-        width: auto;   /* que las dos se ajusten al contenido, no ocupen todo el ancho */
-        margin: 5px 0; /* espacio entre bloques */
-    }
-
+    /* Separación del contenido debajo del header */
     main {
         margin-top: 20px;
     }
